@@ -40,11 +40,15 @@ SOCIAL_AUTH_PIPELINE = (
 
 AUTHENTICATION_BACKENDS = [
     "social_core.backends.facebook.FacebookOAuth2",
+    "social_core.backends.kakao.KakaoOAuth2",
 
     "django.contrib.auth.backends.ModelBackend",
 ]
 
 SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get("SOCIAL_AUTH_FACEBOOK_KEY")
 SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get("SOCIAL_AUTH_FACEBOOK_SECRET")
+
+SOCIAL_AUTH_KAKAO_KEY = os.environ.get("SOCIAL_AUTH_KAKAO_KEY")
+SOCIAL_AUTH_KAKAO_SECRET = os.environ.get("SOCIAL_AUTH_KAKAO_SECRET")
 
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = "/login/"
