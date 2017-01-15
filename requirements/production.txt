@@ -3,3 +3,5 @@ django-pipeline
 social-auth-app-django
 hashids
 Pillow
+requests
+beautifulsoup4
