@@ -17,7 +17,7 @@ class Post(models.Model):
     video_id = models.CharField(
         max_length=16,
     )
-    video_original_url = models.CharField(
+    video_original_title = models.CharField(
         max_length=256,
         blank=True,
         null=True,
