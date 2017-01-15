@@ -2,3 +2,4 @@ django==1.9.7
 django-pipeline
 social-auth-app-django
 hashids
+Pillow
