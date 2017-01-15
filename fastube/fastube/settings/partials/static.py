@@ -31,3 +31,7 @@ PIPELINE = {
         }
     }
 }
+
+# Media
+MEDIA_URL = '/dist/'
+MEDIA_ROOT = os.path.join(PROJECT_ROOT_DIR, "dist", "media")
