@@ -52,6 +52,12 @@ class Post(models.Model):
         return get_youtube_thumbnail_image_url_from_video_id(self.video_id)
     youtube_thumbnail_image_url = property(get_youtube_thumbnail_image_url)
 
+    def get_thumbnail_image_url(self):
+        if self.thumbnail_image:
+            return self.thumbnail_image.url
+        return self.youtube_thumbnail_image_url
+    thumbnail_image_url = property(get_thumbnail_image_url)
+
     def __str__(self):
         return self.title
 
