@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load pipeline %}
 
 {% block content %}
 <h1>Post Detail</h1>
@@ -29,4 +30,8 @@
         <input type="submit" value="댓글 달기">
     </form>
 </section>
+{% endblock %}
+
+{% block custom_javascripts %}
+    {% javascript "posts" %}
 {% endblock %}
