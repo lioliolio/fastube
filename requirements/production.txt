@@ -1,3 +1,11 @@
 django==1.9.7
 django-pipeline
 social-auth-app-django
+hashids
+Pillow
+requests
+beautifulsoup4
+djangorestframework
+celery==3.1.23
+redis
+flower

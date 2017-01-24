@@ -15,7 +15,7 @@ class PostModelTestCase(TestCase):
         )
 
         # Create a post
-        self.post_video_id = "fastube"
+        self.post_video_id = "Vb016aULuts"  # FIXME: should work on random video_id
 
         self.post = self.user.post_set.create(
             video_id=self.post_video_id,  # FIXME: should create using random video_id

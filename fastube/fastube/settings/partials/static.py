@@ -29,5 +29,18 @@ PIPELINE = {
             ),
             'output_filename': 'css/fastube.css',
         }
+    },
+
+    'JAVASCRIPT': {
+        'posts': {
+            'source_filenames': (
+              'js/posts.js',
+            ),
+            'output_filename': 'js/posts.js',
+        }
     }
 }
+
+# Media
+MEDIA_URL = '/dist/'
+MEDIA_ROOT = os.path.join(PROJECT_ROOT_DIR, "dist", "media")
