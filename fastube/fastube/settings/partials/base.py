@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'pipeline',
+    'storages',
     'social_django',
     'rest_framework',
 
