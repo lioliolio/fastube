@@ -9,3 +9,4 @@ djangorestframework
 celery==3.1.23
 redis
 flower
+dj-database-url
